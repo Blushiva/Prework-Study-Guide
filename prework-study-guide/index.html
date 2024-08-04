@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
 
@@ -124,6 +125,70 @@
           <ul>
             <li>Enter your CSS notes here</li>
           </ul>
+          <li>When a developer wants to style an element directly in the HTML file, they use inline CSS.</li>
+          <li>Inline CSS is applied to a single element using the style attribute.</li>
+          <li>Inline CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
+          <li>Internal CSS is used to style a single page. It is placed in the head section of the HTML file using the style element.</li>
+          <li>Internal CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
+          <li>External CSS is used to style multiple pages. It is placed in a separate CSS file and linked to the HTML file using the link element.</li>
+          <li>External CSS is recommended because it separates content from presentation, making the code easier to maintain and update.</li>
+          <li>The CSS syntax consists of a selector, property, and value.</li>
+          <li>The selector is the HTML element that you want to style.</li> 
+          <li>The property is the aspect of the element that you want to change.</li>
+          <li>The value is the new setting for the property.</li>
+          <li>For example, to change the color of the h1 element to red, you would use the following CSS code: h1 { color: red; }</li>
+          <li>CSS properties can be grouped together using a comma.</li>
+          <li>Declarations contain two important components: the CSS property 
+              we want to apply and the value of the property. For
+              example, the declaration color: blue; includes the CSS property 
+              color and the value for that property, blue.</li>
+          <li>The margin property acts much like a margin in a word processing document. 
+              A margin property indicates how much space we want around the outside of 
+              an element. The margin is not visible on the page; it merely adds a 
+              buffer. When we set the margin property to 0, we are indicating 
+              that we want NO extra space around the element.</li>
+          <li>The padding property is often confused withmargin, but it is not the same thing. The padding property adds space around
+              the content inside an element. When you increase padding, you are actually making the entire element bigger! That is
+              because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer
+              outside an element.</li>
+          <li>it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element,
+              and the element's borders, padding, and content. This is sometimes referred to as the CSS box model.</li>
+          <li>Did you notice that the margin and padding properties are part of the declaration block for the * selector? Sometimes,
+              we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or *. In
+              this rule, we have declared that ALL of the elements on the page will have the style properties margin and padding set
+              as 0:</li>
+          <li>Let's add another CSS rule to our style sheet. This rule is for the header and footer selectors, as shown in the
+              following code:
+              header,
+              footer {
+              width: 100%;
+              height: 120px;
+              background-color: blue;
+              color: white;
+              }
+              Notice that in the preceding rule, we combined two selectors into a single CSS rule with a comma, allowing the
+              declarations to affect both selectors. Rather than repeating a rule which would add more lines of code and repetition,
+              two or more elements that will share the same styling can be grouped together. This helps us write Do Not Repeat
+              Yourself (DRY) code.</li>
+              <li>/* .card {
+              width: 80%;
+              margin: 40px auto;
+              border: 5px solid gray;
+              box-shadow: 5px 10px #888888;
+              }*/ </li>
+          <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain
+              these property assignments from the CSS.
+              The first declaration addresses the width of the element at 80% of the available width.
+              The margin property assigns 40px to the top and bottom, and the auto value to the left and right.
+              The border property assigns a border with a width of 5px that is solid and gray.
+              The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by
+              commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. In our
+              example, the X offset is 5px and defines the width or extent of the shadow on the X axis (or to the right of the box);
+              the Y offset is 10px and defines the extent on the Y axis (or just below the box). We haven’t defined the blur or spread
+              radius here, but you’ll learn more about this in time. We’ve used an HTML hexadecimal code to define the color.</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+
         </section>
         
         <section class="card" id="git-section">
