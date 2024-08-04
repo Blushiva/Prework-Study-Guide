@@ -1,2 +1,2 @@
 # Prework-Study-Guide
- A studyguide createdd in Bootcamp to help study
+ A studyguide created in Bootcamp to help students.
