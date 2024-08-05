@@ -23,7 +23,7 @@ N/A
 
 Please refer to the LICENSE in the repo.
 
-This is a proper guide on how to write a README File.  This should be the bare minimum in a project. I know you were expecting a Full on README file but I felt it was more important to put a working example instead.  Afterall this is a Prework Study Guide. Everything below this is pure example.
+This is a proper guide on how to write a README File.  This should be the bare minimum in a project. I know you were expecting a Full on README file but I felt it was more important to put a working example instead.  Afterall this is a Prework Study Guide. Everything below this is pure example for refererance to future work.
 
 
 
