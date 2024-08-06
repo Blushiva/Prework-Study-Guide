@@ -27,10 +27,13 @@
 
           <h2>HTML</h2>
           <h3>Enter your HTML notes here</h3>
+
           <ul>
-            
-          </ul>
-          <ul>
+            <h4>HTML BASICS</h4>
+            <li>HTML is the standard markup language for creating Web pages.</li>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML describes the structure of Web pages using markup</li>
+            <h4>Elements</h4>
             <li>The head element contains information about the webpage.</li>
             <li>The body element represents the visible content shown to the user.</li>
             <li>Elements that are nested inside other elements are called child elements. 
@@ -90,10 +93,17 @@
                 webpage. The img element can contain various attributes; the src 
                 attribute is the most important because it defines the location 
                 of the image.  example: src="https://static.fullstack-bootcamp.com/prework/module-03/lesson-01/cute-pandas-02.jpg" </li>
+            <li>The a element is an anchor used to create hyperlinks. </li>
+            
+            <h4>Attributes</h4>
+            <li>The target attribute is optional. If it is not specified, the linked page will open in the same window or tab.</li>
             <li>The alt attribute is used to provide a text description of the image. 
                 This is important for accessibility because screen readers will 
                 read the alt text to visually impaired users. example: alt="Two cute pandas eating bamboo."</li>
-            <li>The a element is an anchor used to create hyperlinks. </li>
+            <li>The "a" (anchor) element can also be used to create internal links.
+                Internal links are used to link to a specific section of the same page.
+                To create an internal link, you need to use the id attribute to
+                define the section you want to link to. example: a href="#section-id">Link text /a></li>
             <li>The href attribute is used to define the URL of the linked page. 
                 example: href="https://www.google.com"</li>
             <li>The target attribute is used to define where the linked page will open.</li>
@@ -102,11 +112,8 @@
             <li>The _self value opens the linked page in the same frame as it was clicked.</li>
             <li>The _parent value opens the linked page in the parent frame.</li>
             <li>The _top value opens the linked page in the full body of the window.</li>
-            <li>The target attribute is optional. If it is not specified, the linked page will open in the same window or tab.</li>
-            <li>The "a" (anchor) element can also be used to create internal links. 
-                Internal links are used to link to a specific section of the same page. 
-                To create an internal link, you need to use the id attribute to 
-                define the section you want to link to. example: a href="#section-id">Link text /a></li>
+
+            
             <li>The id attribute is used to define a unique identifier for an element.
                 The id attribute is used to create internal links. 
                 Internal links are used to link to a specific section of the same page. 
@@ -114,13 +121,71 @@
                 define the section you want to link to. example: section id="section-id">Section content /section></li>
             <li>* The `src` attribute defines the location, or source, of the image file.
             * The `alt` attribute contains a text string that describes the appearance and functionality of the image.</li>
+        <h4>FOOTER</h4>
             <li>Lastly, we have a "footer" element. The "footer" appears at the bottom of the page and usually contains the author,
                 copyright, contact, sitemap, and navigation. In our case, we have a "p" element that renders "I can code!", as
                 follows:</li>
-            <li>HTML is the standard markup language for creating Web pages.</li>
-            <li>HTML stands for Hyper Text Markup Language</li>
-            <li>HTML describes the structure of Web pages using markup</li>
+        <h4>STYLE PROPERTY</h4>
+        <li>HTMLElement: style property
+        The read-only style property of the HTMLElement returns the inline style of an element in the form of a live
+        CSSStyleDeclaration object that contains a list of all styles properties for that element with values assigned only for
+        the attributes that are defined in the element's inline style attribute.
+        
+        Shorthand properties are expanded. If you set style="border-top: 1px solid black", the longhand properties
+        (border-top-color, border-top-style, and border-top-width) are set instead.
+        
+        This property is read-only, meaning it is not possible to assign a CSSStyleDeclaration object to it. Nevertheless, it is
+        possible to set an inline style by assigning a string directly to the style property. In this case the string is
+        forwarded to CSSStyleDeclaration.cssText. Using style in this manner will completely overwrite all inline styles on the
+        element.
+        
+        Therefore, to add specific styles to an element without altering other style values, it is generally preferable to set
+        individual properties on the CSSStyleDeclaration object. For example, you can write element.style.backgroundColor =
+        "red".
+        
+        A style declaration is reset by setting it to null or an empty string, e.g., elt.style.color = null.
+        
+        Note: CSS property names are converted to JavaScript identifier with these rules:
+        
+        If the property is made of one word, it remains as it is: height stays as is (in lowercase). As float is a reserved
+        keyword in JavaScript, this property name was historically converted to cssFloat. All modern browsers now support the
+        direct use of float in JavaScript to access the float CSS property, but cssFloat is used in older browsers and is still
+        supported as an alias in modern browsers.
+        If the property is made of several words, separated by dashes, the dashes are removed and it is converted to camel case:
+        background-attachment becomes backgroundAttachment.
+        The style property has the same priority in the CSS cascade as an inline style declaration set via the style attribute.</li>
 
+        <h4>Document: createElement() method</h4>
+        <li>
+            In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an
+            HTMLUnknownElement if tagName isn't recognized.
+        
+            js
+        
+            createElement(tagName)
+            createElement(tagName, options)
+            tagName
+            A string that specifies the type of element to be created. The nodeName of the created element is initialized with
+            the
+            value of tagName. Don't use qualified names (like "html:a") with this method. When called on an HTML document,
+            createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome,
+            createElement(null) works like createElement("null").
+        
+            options Optional
+            An object with the following properties:
+        
+            is
+            The tag name of a custom element previously defined via customElements.define(). See Web component example for more
+            details.
+        
+            The new Element.
+        
+            Note: A new HTMLElement is returned if the document is an HTMLDocument, which is the most common case. Otherwise a
+            new
+            Element is returned.
+        
+            This creates a new <div> and inserts it before the element with the ID "div1".
+        </li>
           </ul>
         </section>
         
@@ -193,7 +258,86 @@
               radius here, but you’ll learn more about this in time. We’ve used an HTML hexadecimal code to define the color.</li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
+        <h4>ELEMENT:setAttribute()method</h4>
+        <li>Element: setAttribute() method
+        The setAttribute() method of the Element interface sets the value of an attribute on the specified element. If the
+        attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+        To get the current value of an attribute, use getAttribute(); to remove an attribute, call removeAttribute().
+        If you need to work with the Attr node (such as cloning from another element) before adding it, you can use the
+        setAttributeNode() method instead.
+        
+        js
+        
+        setAttribute(name, value)
+        name
+        A string specifying the name of the attribute whose value is to be set. The attribute name is automatically converted to
+        all lower-case when setAttribute() is called on an HTML element in an HTML document.
+        
+        value
+        A string containing the value to assign to the attribute. Any non-string value specified is converted automatically into
+        a string.
+        
+        Boolean attributes are considered to be true if they're present on the element at all. You should set value to the empty
+        string ("") or the attribute's name, with no leading or trailing whitespace. See the example below for a practical
+        demonstration.
+        
+        Since the specified value gets converted into a string, specifying null doesn't necessarily do what you expect. Instead
+        of removing the attribute or setting its value to be null, it instead sets the attribute's value to the string "null".
+        If you wish to remove an attribute, call removeAttribute().
+        
+        InvalidCharacterError DOMException
+        Thrown if the name value is not a valid XML name; for example, it starts with a number, a hyphen, or a period, or
+        contains characters other than alphanumeric characters, underscores, hyphens, or periods.
+        
+        In the following example, setAttribute() is used to set attributes on a <button>.
+        
+            html
+        
+            <button>Hello World</button>
+            js
+        
+            const button = document.querySelector("button");
+        
+            button.setAttribute("name", "helloButton");
+            button.setAttribute("disabled", "");
+            This demonstrates two things:
+        
+            The first call to setAttribute() above shows changing the name attribute's value to "helloButton". You can see this
+            using your browser's page inspector (Chrome, Edge, Firefox, Safari).
+            To set the value of a Boolean attribute, such as disabled, you can specify any value. An empty string or the name of
+            the attribute are recommended values. All that matters is that if the attribute is present at all, regardless of its
+            actual value, its value is considered to be true. The absence of the attribute means its value is false. By setting
+            the value of the disabled attribute to the empty string (""), we are setting disabled to true, which results in the
+            button being disabled. cited from Web MDN</li>
+        <h4>Document: createElement() method</h4>
+<li> 
+In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an
+HTMLUnknownElement if tagName isn't recognized.
 
+js
+
+createElement(tagName)
+createElement(tagName, options)
+tagName
+A string that specifies the type of element to be created. The nodeName of the created element is initialized with the
+value of tagName. Don't use qualified names (like "html:a") with this method. When called on an HTML document,
+createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome,
+createElement(null) works like createElement("null").
+
+options Optional
+An object with the following properties:
+
+is
+The tag name of a custom element previously defined via customElements.define(). See Web component example for more
+details.
+
+The new Element.
+
+Note: A new HTMLElement is returned if the document is an HTMLDocument, which is the most common case. Otherwise a new
+Element is returned.
+
+This creates a new <div> and inserts it before the element with the ID "div1".
+</li>
           </ul>
         </section>
         
@@ -203,14 +347,15 @@
           <ul>
             
                 <li>Git is a version control system that allows developers to track changes in their code.</li>
+            <h4>COMMANDS for GIT</h4>
                 <li>git status: checks what branch we are currently on</li>
                 <li>git checkout -b branch-name: creates a new branch and switches to it</li>
                 <li>Types of GitHub Pages sites
-                
+            <h4>TYPES OF PUBLISHED GIT HUB</h4>   
                 There are three types of GitHub Pages sites: project, user, and organization. Project sites are connected to a specific
                 project hosted on GitHub, such as a JavaScript library or a recipe collection. User and organization sites are connected
                 to a specific account on GitHub.com.
-                
+            <h4>HOW TO PUBLISH WEBPAGE/WEBSITE</h4>
                 To publish a user site, you must create a repository owned by your personal account that's named <username>.github.io.
                     To publish an organization site, you must create a repository owned by an organization that's named <organization>
                         .github.io. Unless you're using a custom domain, user and organization sites are available at http(s)://
@@ -252,7 +397,7 @@
           <h2>JavaScript</h2>
           <h3>Enter your JavaScript notes here</h3>
           <ul>
-            <li>FUNCTIONS</li>
+            <h4>FUNCTIONS</h4>
             <li>A function is simply a set of instructions that tells the computer how to perform a certain task.</li>
             <li>A function is different from a for loop or conditional statement because functions do not automatically execute when the
                 JavaScript file (in our case, script.js) is run. Instead, you must call a function by name in order to execute it. While
@@ -262,6 +407,7 @@
             <li>A function's name is followed by parentheses (). Later on, we will define parameters that can be placed inside the
                 parentheses. For now, just remember that it is important to include the parentheses whenever you write a function.
                 </li>
+            <h4>VARIABLES</h4>
             <li>A variable is a named container that allows us to store data in our code.</li>
             <li>Control flow is the order in which a computer executes code in a script.</li>
             <li>To declare a variable in JavaScript, we have a few different options. Prior to more recent changes to JavaScript, we
@@ -274,6 +420,7 @@
                 information stored in the variable in our code.</li>
             <li>After the name, we use the assignment operator, which is the equal sign (=). 
                 This operator assigns the value on the right example: const shape = "circle";</li>
+            <h4>CONTROL FLOW</h4>
             <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first
                 statement at the top of the page, down to the last statement at the bottom of the page. The following brief video will
                 help us understand this concept:</li>
@@ -285,8 +432,10 @@
                 is truthy. If it is, then it will do whatever action we ask it to do in between the curly brackets. If the condition
                 isn’t true or has a value that isn’t truthy, then the computer will ignore whatever is in between the curly brackets and
                 move on.</li>
+            <h4>ARRAYS</h4>
             <li>Arrays are useful tools for storing multiple items with different data types in a single variable, but not all arrays
                 must have multiple data types.</li>
+            <h4>for Loops</h4>
             <li>A for loop contains the following three important statements:</li>
               <ol>* The first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we
               declare a variable x and give it a value of 0 (because the first index of an array is always 0), as shown in the
@@ -303,7 +452,337 @@
         <section class="card" id="other-section">
           <h2>Other</h2>
           <h3>Enter your Other notes here</h3>
-         
+         <h4>Web APIs</h4>
+         <ul>
+           <li>application programming interfaces, or APIs, which allow web developers to create dynamic, interactive web applications.
+        An essential part of a developer's toolbox, APIs can help add a wide range of functionality to your code.</li> 
+        <li>APIs are built directly into the browser. When a webpage is loaded in the browser, an object representation of the
+        webpage (the Document Object Model, or DOM) is created. As a programming interface, the DOM allows us to use JavaScript
+        to interact with HTML elements.</li>
+        <h4>Window</h4>
+        <ul>
+        <li>The Window interface represents a window containing a DOM document; the document property points to the DOM document
+        loaded in that window.
+        
+        A window for a given document can be obtained using the document.defaultView property.
+        
+        A global variable, window, representing the window in which the script is running, is exposed to JavaScript code.
+        
+        The Window interface is home to a variety of functions, namespaces, objects, and constructors which are not necessarily
+        directly associated with the concept of a user interface window. However, the Window interface is a suitable place to
+        include these items that need to be globally available. Many of these are documented in the JavaScript Reference and the
+        DOM Reference.
+        
+        In a tabbed browser, each tab is represented by its own Window object; the global window seen by JavaScript code running
+        within a given tab always represents the tab in which the code is running. That said, even in a tabbed browser, some
+        properties and methods still apply to the overall window that contains the tab, such as resizeTo() and innerHeight.
+        Generally, anything that can't reasonably pertain to a tab pertains to the window instead.
+        
+        Note that properties which are objects (e.g., for overriding the prototype of built-in elements) are listed in a
+        separate section below.</li>
+         </ul>
+    <h4>DOM</h4>
+    <ul>
+        <li>Document Object Model (DOM)
+        The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of
+        a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling
+        HTML, SVG, or XML documents as objects are not part of the core JavaScript language.
+        
+        The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains
+        objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style,
+        or content.
+        
+        Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.
+        The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a
+        document on the web. This guide will introduce the DOM, look at how the DOM represents an HTML document in memory and
+        how to use APIs to create web content and applications.
+        
+        The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs
+        can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way,
+        programming languages can interact with the page.
+        
+        A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is
+        the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented
+        representation of the web page, it can be modified with a scripting language such as JavaScript.
+        
+        For example, the DOM specifies that the querySelectorAll method in this code snippet must return a list of all the p element
+            elements in the document:
+        
+            js
+        
+            const paragraphs = document.querySelectorAll("p");
+        
+        
+            alert(paragraphs[0].nodeName);
+            All of the properties, methods, and events available for manipulating and creating web pages are organized into
+            objects. For example, the document object that represents the document itself, any table objects that implement the
+            HTMLTableElement DOM interface for accessing HTML tables, and so forth, are all objects.
+        
+            The DOM is built using multiple APIs that work together. The core DOM defines the entities describing any document
+            and the objects within it. This is expanded upon as needed by other APIs that add new features and capabilities to
+            the DOM. For example, the HTML DOM API adds support for representing HTML documents to the core DOM, and the SVG API
+            adds support for representing SVG documents.</li>
+            <li>Document: querySelectorAll() method
+            
+            The Document method querySelectorAll() returns a static (not live) NodeList representing a list of the document's
+            elements that match the specified group of selectors.
+            
+            Syntax
+            JS
+            Copy to Clipboard
+            querySelectorAll(selectors)
+            Parameters
+            selectors
+            A string containing one or more selectors to match. This string must be a valid CSS selector string; if it isn't, a
+            SyntaxError exception is thrown.
+            
+            Note that the HTML specification does not require attribute values to be valid CSS identifiers. If a class or id
+            attribute value is not a valid CSS identifier, than you must escape it before using it in a selector, either by calling
+            CSS.escape() on the value, or using one of the techniques described in Escaping characters. See Escaping attribute
+            values for an example.
+            
+            Return value
+            A non-live NodeList containing one Element object for each element that matches at least one of the specified selectors
+            or an empty NodeList in case of no matches.
+            
+            Note: If the specified selectors include a CSS pseudo-element, the returned list is always empty.
+            Exceptions
+            SyntaxError DOMException
+            Thrown if the syntax of the specified selectors string is not valid.
+</li>
+<h4>Node: appendChild() method</h4>
+        <li>
+        The appendChild() method of the Node interface adds a node to the end of the list of children of a specified parent
+        node.
+        
+        Note: If the given child is a reference to an existing node in the document, appendChild() moves it from its current
+        position to the new position.
+        
+        If the given child is a DocumentFragment, the entire contents of the DocumentFragment are moved into the child list of
+        the specified parent node.
+        
+        appendChild() returns the newly appended node, or if the child is a DocumentFragment, the emptied fragment.
+        
+        Note: Unlike this method, the Element.append() method supports multiple arguments and appending strings. You can prefer
+        using it if your node is an element.
+        
+        aChild
+        The node to append to the given parent node (commonly an element).
+        
+        HierarchyRequestError DOMException
+        Thrown when the constraints of the DOM tree are violated, that is if one of the following cases occurs:
+        
+        If the parent of aChild is not a Document, DocumentFragment, or an Element.
+        If the insertion of aChild would lead to a cycle, that is if aChild is an ancestor of the node.
+        If aChild is not a DocumentFragment, a DocumentType, an Element, or a CharacterData.
+        If the current node is a Text, and its parent is a Document.
+        If the current node is a DocumentType and its parent is not a Document, as a doctype should always be a direct
+        descendant of a document.
+        If the parent of the node is a Document and aChild is a DocumentFragment with more than one Element child, or that has a
+        Text child.
+        If the insertion of aChild would lead to Document with more than one Element as child.
+        If the given child is a reference to an existing node in the document, appendChild() moves it from its current position
+        to the new position — there is no requirement to remove the node from its parent node before appending it to some other
+        node. This means that a node can't be in two points of the document simultaneously. The Node.cloneNode() method can be
+        used to make a copy of the node before appending it under the new parent. Copies made with cloneNode are not
+        automatically kept in sync.
+        
+        appendChild() returns the newly appended node, instead of the parent node. This means you can append the new node as
+        soon as it's created without losing reference to it:</li>
+    <h4>setInterval() global function</h4>
+    <li>The setInterval() method, offered on the Window and WorkerGlobalScope interfaces, repeatedly calls a function or
+    executes a code snippet, with a fixed time delay between each call.
+    This method returns an interval ID which uniquely identifies the interval, so you can remove it later by calling
+    clearInterval().
+    </li>
+    <li>js</li>
+    <li>
+    setInterval(code)
+    setInterval(code, delay)
+    
+    setInterval(func)
+    setInterval(func, delay)
+    setInterval(func, delay, arg1)
+    setInterval(func, delay, arg1, arg2)
+    setInterval(func, delay, arg1, arg2, argN)
+    </li>
+
+    <li>func</li>
+    <li>A function to be executed every delay milliseconds. The first execution happens after delay milliseconds.
+    </li>
+    <li>code</li>
+    <li>An optional syntax allows you to include a string instead of a function, which is compiled and executed every delay
+    milliseconds. This syntax is not recommended for the same reasons that make using eval() a security risk.
+    </li>
+    <li>delay Optional
+    The time, in milliseconds (thousandths of a second), the timer should delay in between executions of the specified
+    function or code. Defaults to 0 if not specified. See Delay restrictions below for details on the permitted range of
+    delay values.</li>
+    <li>
+    arg1, …,argN Optional
+    Additional arguments which are passed through to the function specified by func once the timer expires.
+    
+    The returned intervalID is a numeric, non-zero value which identifies the timer created by the call to setInterval();
+    this value can be passed to clearInterval() to cancel the interval.
+    
+    It may be helpful to be aware that setInterval() and setTimeout() share the same pool of IDs, and that clearInterval()
+    and clearTimeout() can technically be used interchangeably. For clarity, however, you should try to always match them to
+    avoid confusion when maintaining your code.
+    
+    Note: The delay argument is converted to a signed 32-bit integer. This effectively limits delay to 2147483647 ms,
+    roughly 24.8 days, since it's specified as a signed integer in the IDL.</li>
+    <h4>EVENT TARGET:addEventListener()method</h4>
+    <li>EventTarget: addEventListener() method
+    Note: This feature is available in Web Workers.
+    
+    The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified
+    event is delivered to the target.
+    
+    Common targets are Element, or its children, Document, and Window, but the target may be any object that supports events
+    (such as IDBRequest).
+    
+    Note: The addEventListener() method is the recommended way to register an event listener. The benefits are as follows:
+    
+    It allows adding more than one handler for an event. This is particularly useful for libraries, JavaScript modules, or
+    any other kind of code that needs to work well with other libraries or extensions.
+    In contrast to using an onXYZ property, it gives you finer-grained control of the phase when the listener is activated
+    (capturing vs. bubbling).
+    It works on any event target, not just HTML or SVG elements.
+    The method addEventListener() works by adding a function, or an object that implements a handleEvent() function, to the
+    list of event listeners for the specified event type on the EventTarget on which it's called. If the function or object
+    is already in the list of event listeners for this target, the function or object is not added a second time.
+    
+    Note: If a particular anonymous function is in the list of event listeners registered for a certain target, and then
+    later in the code, an identical anonymous function is given in an addEventListener call, the second function will also
+    be added to the list of event listeners for that target.
+    
+    Indeed, anonymous functions are not identical even if defined using the same unchanging source-code called repeatedly,
+    even if in a loop.
+    
+    Repeatedly defining the same unnamed function in such cases can be problematic. (See Memory issues, below.)
+    
+    If an event listener is added to an EventTarget from inside another listener — that is, during the processing of the
+    event — that event will not trigger the new listener. However, the new listener may be triggered during a later stage of
+    event flow, such as during the bubbling phase.</li>
+<h4>KeyboardEvent</h4>
+<li>KeyboardEvent objects describe a user interaction with the keyboard; each event describes a single interaction between
+    the user and a key (or combination of a key with modifier keys) on the keyboard. The event type (keydown, keypress, or
+    keyup) identifies what kind of keyboard activity occurred.
+
+    Note: KeyboardEvent events just indicate what interaction the user had with a key on the keyboard at a low level,
+    providing no contextual meaning to that interaction. When you need to handle text input, use the input event instead.
+    Keyboard events may not be fired if the user is using an alternate means of entering text, such as a handwriting system
+    on a tablet or graphics tablet.
+</li>
+<h4>Event: preventDefault() method</h4>
+    <li>The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly
+    handled, its default action should not be taken as it normally would be.
+    
+    The event continues to propagate as usual, unless one of its event listeners calls stopPropagation() or
+    stopImmediatePropagation(), either of which terminates propagation at once.
+    
+    As noted below, calling preventDefault() for a non-cancelable event, such as one dispatched via
+    EventTarget.dispatchEvent(), without specifying cancelable: true has no effect.</li>
+    <h4>Event: stopPropagation() method</h4>
+    <li>The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing
+    and bubbling phases. It does not, however, prevent any default behaviors from occurring; for instance, clicks on links
+    are still processed. If you want to stop those behaviors, see the preventDefault() method. It also does not prevent
+    propagation to other event-handlers of the current element. If you want to stop those, see stopImmediatePropagation().</li>
+    <h4>STORAGE</h4>
+    <li>The Storage interface of the Web Storage API provides access to a particular domain's session or local storage. It
+    allows, for example, the addition, modification, or deletion of stored data items.
+    <li>
+    To manipulate, for instance, the session storage for a domain, a call to Window.sessionStorage is made; whereas for
+    local storage the call is made to Window.localStorage.</li>
+    <li>
+    Instance properties
+    Storage.length Read only
+    Returns an integer representing the number of data items stored in the Storage object.</li>
+    <li>
+    Instance methods</li>
+    <ul>
+    Storage.key()
+    When passed a number n, this method will return the name of the nth key in the storage.</ul>
+    <ul>
+    Storage.getItem()
+    When passed a key name, will return that key's value.</ul>
+    <ul>
+    Storage.setItem()
+    When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.</ul>
+    
+    Storage.removeItem()
+    When passed a key name, will remove that key from the storage.
+    
+    Storage.clear()
+    When invoked, will empty all keys out of the storage.
+</li>
+<h4>Using data attributes</h4>
+<li>HTML is designed with extensibility in mind for data that should be associated with a particular element but need not
+have any defined meaning. data-* attributes allow us to store extra information on standard, semantic HTML elements
+without other hacks such as non-standard attributes, or extra properties on DOM.
+
+The syntax is simple. Any attribute on any element whose attribute name starts with data- is a data attribute. Say you
+have an article and you want to store some extra information that doesn't have any visual representation. Just use data
+attributes for that:
+</li>
+<li>html
+
+< article id="electric-cars" data-columns="3" data-index-number="12314" data-parent="cars" >
+    …
+</article>
+Reading the values of these attributes out in JavaScript is also very simple. You could use getAttribute() with their
+full HTML name to read them, but the standard defines a simpler way: a DOMStringMap you can read out via a dataset
+property.
+
+To get a data attribute through the dataset object, get the property by the part of the attribute name after data- (note
+that dashes are converted to camel case).
+
+js
+
+const article = document.querySelector("#electric-cars");
+
+
+
+article.dataset.columns;
+article.dataset.indexNumber;
+article.dataset.parent;
+Each property is a string and can be read and written. In the above case setting article.dataset.columns = 5 would
+change that attribute to "5".
+
+Note that, as data attributes are plain HTML attributes, you can even access them from CSS. For example to show the
+parent data on the article you can use generated content in CSS with the attr() function:
+
+css
+
+article::before {
+content: attr(data-parent);
+}
+You can also use the attribute selectors in CSS to change styles according to the data:
+
+css
+
+article[data-columns="3"] {
+width: 400px;
+}
+article[data-columns="4"] {
+width: 600px;
+}
+You can see all this working together in this JSBin example.
+
+Data attributes can also be stored to contain information that is constantly changing, like scores in a game. Using the
+CSS selectors and JavaScript access here this allows you to build some nifty effects without having to write your own
+display routines. See this screencast for an example using generated content and CSS transitions (JSBin example).
+
+Data values are strings. Number values must be quoted in the selector for the styling to take effect.
+
+Do not store content that should be visible and accessible in data attributes, because assistive technology may not
+access them. In addition, search crawlers may not index data attributes' values.
+
+This article is adapted from Using data attributes in JavaScript and CSS on hacks.mozilla.org.
+Custom attributes are also supported in SVG 2; see HTMLElement.dataset and data-* for more information.
+How to use HTML data attributes (Sitepoint)</li>
+<ul>    </ul>
+    </ul>
           <ul>
           </ul>
         </section>
