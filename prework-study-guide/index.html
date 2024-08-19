@@ -435,8 +435,7 @@ This creates a new <div> and inserts it before the element with the ID "div1".
             <li></li>
                 <h4>CONTROL FLOW</h4>
             <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first
-                statement at the top of the page, down to the last statement at the bottom of the page. The following brief video will
-                help us understand this concept:</li>
+                statement at the top of the page, down to the last statement at the bottom of the page. </li>
             <li>JavaScript is read from top to bottom, and order counts. This means that we must be intentional about how we set up code
                 in a JS file; we can’t just throw it all in there any which way!</li>
             <li>Control flow can be interrupted, however. We can use conditional statements and loops to control the order in which code
@@ -450,6 +449,7 @@ This creates a new <div> and inserts it before the element with the ID "div1".
             <li>Arrays are useful tools for storing multiple items with different data types in a single variable, but not all arrays
                 must have multiple data types.</li>
             <li>Arrays are a type of data structure that allows us to store multiple items in a single variable.</li>
+           <li>.map()</li>
             <li></li>
             <h4>for Loops</h4>
             <li>A for loop contains the following three important statements:</li>
@@ -504,9 +504,40 @@ This creates a new <div> and inserts it before the element with the ID "div1".
                 The <em>forEach()</em> method of Array instances executes a provided function once for each array element.
                 <li></li>
                 <li><em><h4>What is the difference between the spread and rest operator?</h4></em></li>
-                <li> Spread syntax looks exactly like rest syntax. In a way, spread syntax is the opposite of rest syntax. Spread syntax
+                <li>Spread syntax looks exactly like rest syntax. In a way, spread syntax is the opposite of rest syntax. Spread syntax
                 "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single
                 element. <em>See rest parameters and rest property. </em> </li>
+                <li><em>Spread syntax</em> can be used when all elements from an object or array need to be included in a new array or object, or
+                should be applied one-by-one in a function call's arguments list. There are three distinct places that accept the spread
+                syntax:</li>
+                <ol>Function arguments list (myFunction(a, ...iterableObj, b))</ol>
+                <ol>Array literals ([1, ...iterableObj, '4', 'five', 6])</ol>
+                <ol>Object literals ({ ...obj, key: 'value' })</ol>
+                <li>See MDN- Spread Syntax -for more info</li>
+                <li><em>Copying an array</em>
+                
+                You can use spread syntax to make a shallow copy of an array. Each array element retains its identity without getting
+                copied.
+                
+                js
+                
+                const arr = [1, 2, 3];
+                const arr2 = [...arr];
+                
+                arr2.push(4);
+                
+                
+                Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying
+                multidimensional arrays. The same is true with Object.assign() — no native operation in JavaScript does a deep clone.
+                The web API method structuredClone() allows deep copying values of certain supported types. See shallow copy for more
+                details.</li>
+                <li><em>Overriding properties</em>
+                When one object is spread into another object, or when multiple objects are spread into one object, and properties with
+                identical names are encountered, the property takes the last value assigned while remaining in the position it was
+                originally set.</li>
+                <li><em>Object destructuring</em> is a useful JavaScript feature to extract properties from objects and bind them to variables. Even
+                better, object destructuring can extract multiple properties in a single statement, can access properties from nested
+                objects, and can set a default value if the property doesn't exist. </li>
           </ul>
         </section>
 
@@ -520,6 +551,7 @@ This creates a new <div> and inserts it before the element with the ID "div1".
            <li><h4>What is the difference between window.console.log() and console.log(). There is no difference between console.log and window.console.log. Have a check 
              on MDN. They clearly quote -The Console object can be accessed from any global object, Window on browsing scopes, WorkerGlobalScope, and its specific variants 
              in workers via property console. It's exposed as Window.console, and can be referenced as simply console.</h4></li>
+             
            <li>To understand the difference, let's work each of them through:
             console.log(...) means:
 <li>
@@ -533,6 +565,8 @@ Then it looks up the console property on the resulting object.
 Then it looks up the log property on the resulting object.
 Then it calls it
 </li>
+<li><em>What happens when you console.log(window) in Node.js?</em></li>
+<li>We get an error because the window object is not a part of Node.js; it's a browser feature.</li></li>
         <h4>Web APIs</h4>
            <li><h4>application programming interfaces, or APIs</h4> API's allow web developers to create dynamic, interactive web applications.
         An essential part of a developer's toolbox, APIs can help add a wide range of functionality to your code.</li> 
