@@ -452,16 +452,15 @@ This creates a new <div> and inserts it before the element with the ID "div1".
         <section class="card" id="other-section">
           <h2>Other</h2>
           <h3>Enter your Other notes here</h3>
-         <h4>Web APIs</h4>
+         
          <ul>
 
-           <li>What is the difference between window.console.log() and console.log(). There is no difference between console.log and window.console.log. Have a check 
+           <li><h4>What is the difference between window.console.log() and console.log(). There is no difference between console.log and window.console.log. Have a check 
              on MDN. They clearly quote -The Console object can be accessed from any global object, Window on browsing scopes, WorkerGlobalScope, and its specific variants 
-             in workers via property console. It's exposed as Window.console, and can be referenced as simply console.
-           To understand the difference, let's work each of them through:
-
-console.log(...) means:
-
+             in workers via property console. It's exposed as Window.console, and can be referenced as simply console.</h4></li>
+           <li>To understand the difference, let's work each of them through:
+            console.log(...) means:
+<li>
 The JavaScript engine has to search for the a binding for the identifier console starting with the current execution context, then the next one, then the next, until it finds it at global scope.
 Then it looks up the log property on the resulting object.
 Then it calls it
@@ -472,8 +471,8 @@ Then it looks up the console property on the resulting object.
 Then it looks up the log property on the resulting object.
 Then it calls it
 </li>
-           
-           <li>application programming interfaces, or APIs, which allow web developers to create dynamic, interactive web applications.
+        <h4>Web APIs</h4>
+           <li><h4>application programming interfaces, or APIs</h4> API's allow web developers to create dynamic, interactive web applications.
         An essential part of a developer's toolbox, APIs can help add a wide range of functionality to your code.</li> 
         <li>APIs are built directly into the browser. When a webpage is loaded in the browser, an object representation of the
         webpage (the Document Object Model, or DOM) is created. As a programming interface, the DOM allows us to use JavaScript
