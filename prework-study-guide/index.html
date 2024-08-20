@@ -947,6 +947,51 @@ How to use HTML data attributes (Sitepoint)</li>
 <li>It would print the path to the file that is being executed. process.argv is an array that 
     contains the command line.  0, 1 are the first two elements of the array. 0 is the path to the node executable and 1 is the path to the file being executed.</li>
 <br>
+<b>fs cheatsheet</b>
+<br>
+<br>
+<b>Reading</b>
+<li>fs.readFile('file.txt', function(err, data) { .. });</li>
+<li>fs.readFile('file.txt', {encoding: 'utf-8'}, function(err, data) { .. });</li>
+<br>
+<b>Writing</b>
+<li>fs.writeFile('output.txt', function(err) { .. });</li>
+<li>fs.appendFile('output.txt', function(err) { .. });</li>
+<br>
+<b>Watch</b>
+<li>fs.watch('dir OR file.txt', { persistent: true }, function(event, file) {
+event; /* rename | change */
+});</li>
+<br>
+<b>Getting info</b>
+<li>fs.exists('file.txt', function(exists /*bool*/) { ... });</li>
+<li>fs.stat('file.txt', function(stats) {
+stats.isFile();
+stats.isDirectory();
+stats.isSymbolicLink();
+});</li>
+<br>
+<b>File operations</b>
+<br>
+<li>fs.rename('old.txt', 'new.txt', function(){});</li>
+<li>fs.chown('file.txt', uid, gid, function(){});</li>
+<li>fs.symlink('src', 'dest', function(){});</li>
+<li>fs.unlink('path', function(){});</li>
+<li>fs.rmdir('path', function(){});</li>
+<li>fs.readdir('path', function(err, files) { .. }); /* `files` = array of names */</li>
+<br>
+<b>Path</b>
+<li>fs.realpath('/etc/passwd', function(err, path) { /* "/private/etc/passwd" */ });</li>
+<br>
+<b>Sync</b>
+<li>data = fs.readFileSync('input.txt');</li>
+<li>fs.writeFileSync('output.txt', data);</li>
+<li>fs.appendFileSync('output.txt', data);</li>
+<li>fs.existsSync('file.txt');</li>
+<br>
+<b>References</b>
+<li>https://nodejs.org/api/fs.html</li>
+<br>
 <li><b>Which of the following methods in the fs module is used to read the contents of a file asynchronously?</b></li>
 <li>readFile() is used to read the contents of a file asynchronously. The fs module is a built-in module in Node.js that provides file system-related functionality. The readFile() method reads the entire contents of a file asynchronously and returns the data in a callback function.</li>
 <ul>    </ul>
