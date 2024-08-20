@@ -24,16 +24,22 @@
        <!-- coding this the right way-->
 
         <section class="card" id="html-section">
-
+        <br>
           <h2>HTML</h2>
+        <br>
             <h3>Enter your HTML notes here</h3>
+        <br>
             <hr>
           <ul>
+            <br>
             <h4>HTML BASICS</h4>
+            <br>
             <li>HTML is the standard markup language for creating Web pages.</li>
             <li>HTML stands for Hyper Text Markup Language</li>
             <li>HTML describes the structure of Web pages using markup</li>
+            <br>
             <h4>Elements</h4>
+            <br>
             <li>The head element contains information about the webpage.</li>
             <li>The body element represents the visible content shown to the user.</li>
             <li>Elements that are nested inside other elements are called child elements. 
@@ -48,6 +54,14 @@
                 know the difference. An element refers to the entire element 
                 from opening tag to closing tag, whereas a tag refers only
                 to what appears inside the angle brackets.</li>
+            <li>the b> tag makes text bold</li>
+            <li>The i> tag makes text italic</li>
+            <li>The u> tag makes text underlined</li>
+            <li>The br> tag creates a line break</li>
+            <li>The hr> tag creates a horizontal rule</li>
+            <li>The em> tag emphasizes text</li>
+            <li>The strong> tag highlights text</li>
+            <li>The a> tag creates a hyperlink</li>
             <li>The h1, h2, h3, h4, h5, and h6 elements represent 
                 the level of heading a given text block represents.
                 Headings are exactly what they sound like: larger or more 
@@ -93,9 +107,9 @@
                 webpage. The img element can contain various attributes; the src 
                 attribute is the most important because it defines the location 
                 of the image.  example: src="https://static.fullstack-bootcamp.com/prework/module-03/lesson-01/cute-pandas-02.jpg" </li>
-            <li>The a element is an anchor used to create hyperlinks. </li>
-            
+            <br>
             <h4>Attributes</h4>
+            <br>
             <li>The target attribute is optional. If it is not specified, the linked page will open in the same window or tab.</li>
             <li>The alt attribute is used to provide a text description of the image. 
                 This is important for accessibility because screen readers will 
@@ -112,8 +126,6 @@
             <li>The _self value opens the linked page in the same frame as it was clicked.</li>
             <li>The _parent value opens the linked page in the parent frame.</li>
             <li>The _top value opens the linked page in the full body of the window.</li>
-
-            
             <li>The id attribute is used to define a unique identifier for an element.
                 The id attribute is used to create internal links. 
                 Internal links are used to link to a specific section of the same page. 
@@ -121,11 +133,15 @@
                 define the section you want to link to. example: section id="section-id">Section content /section></li>
             <li>* The `src` attribute defines the location, or source, of the image file.
             * The `alt` attribute contains a text string that describes the appearance and functionality of the image.</li>
+        <br>
         <h4>FOOTER</h4>
+        <br>
             <li>Lastly, we have a "footer" element. The "footer" appears at the bottom of the page and usually contains the author,
                 copyright, contact, sitemap, and navigation. In our case, we have a "p" element that renders "I can code!", as
                 follows:</li>
+        <br>
         <h4>STYLE PROPERTY</h4>
+        <br>
         <li>HTMLElement: style property
         The read-only style property of the HTMLElement returns the inline style of an element in the form of a live
         CSSStyleDeclaration object that contains a list of all styles properties for that element with values assigned only for
@@ -154,8 +170,9 @@
         If the property is made of several words, separated by dashes, the dashes are removed and it is converted to camel case:
         background-attachment becomes backgroundAttachment.
         The style property has the same priority in the CSS cascade as an inline style declaration set via the style attribute.</li>
-
+        <br>
         <h4>Document: createElement() method</h4>
+        <br>
         <li>
             In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an
             HTMLUnknownElement if tagName isn't recognized.
@@ -184,51 +201,71 @@
             new
             Element is returned.
         
-            This creates a new <div> and inserts it before the element with the ID "div1".
+            This creates a new div> and inserts it before the element with the ID "div1".
         </li>
           </ul>
         </section>
         
         <section class="card" id="css-section">
+        <br>
           <h2>CSS</h2>
+        <br>
           <h3>Enter your CSS notes here</h3>
+          <br>
           <hr>
           <ul>
             
           
           <li>When a developer wants to style an element directly in the HTML file, they use inline CSS.</li>
+          <br>
           <li>Inline CSS is applied to a single element using the style attribute.</li>
+        <br>
           <li>Inline CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
+        <br>
           <li>Internal CSS is used to style a single page. It is placed in the head section of the HTML file using the style element.</li>
-          <li>Internal CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
-          <li>External CSS is used to style multiple pages. It is placed in a separate CSS file and linked to the HTML file using the link element.</li>
-          <li>External CSS is recommended because it separates content from presentation, making the code easier to maintain and update.</li>
-          <li>The CSS syntax consists of a selector, property, and value.</li>
-          <li>The selector is the HTML element that you want to style.</li> 
-          <li>The property is the aspect of the element that you want to change.</li>
-          <li>The value is the new setting for the property.</li>
-          <li>For example, to change the color of the h1 element to red, you would use the following CSS code: h1 { color: red; }</li>
-          <li>CSS properties can be grouped together using a comma.</li>
-          <li>Declarations contain two important components: the CSS property 
+        <br>
+            <li>Internal CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
+        <br><li>External CSS is used to style multiple pages. It is placed in a separate CSS file and linked to the HTML file using the link element.</li>
+        <br>
+            <li>External CSS is recommended because it separates content from presentation, making the code easier to maintain and update.</li>
+        <br>
+            <li>The CSS syntax consists of a selector, property, and value.</li>
+        <br>
+            <li>The selector is the HTML element that you want to style.</li> 
+        <br>
+            <li>The property is the aspect of the element that you want to change.</li>
+        <br>
+            <li>The value is the new setting for the property.</li>
+        <br>
+            <li>For example, to change the color of the h1 element to red, you would use the following CSS code: h1 { color: red; }</li>
+        <br>
+            <li>CSS properties can be grouped together using a comma.</li>
+        <br>
+            <li>Declarations contain two important components: the CSS property 
               we want to apply and the value of the property. For
               example, the declaration color: blue; includes the CSS property 
               color and the value for that property, blue.</li>
-          <li>The margin property acts much like a margin in a word processing document. 
+        <br>
+            <li>The margin property acts much like a margin in a word processing document. 
               A margin property indicates how much space we want around the outside of 
               an element. The margin is not visible on the page; it merely adds a 
               buffer. When we set the margin property to 0, we are indicating 
               that we want NO extra space around the element.</li>
-          <li>The padding property is often confused withmargin, but it is not the same thing. The padding property adds space around
+        <br>
+            <li>The padding property is often confused withmargin, but it is not the same thing. The padding property adds space around
               the content inside an element. When you increase padding, you are actually making the entire element bigger! That is
               because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer
               outside an element.</li>
-          <li>it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element,
+        <br>
+            <li>it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element,
               and the element's borders, padding, and content. This is sometimes referred to as the CSS box model.</li>
-          <li>Did you notice that the margin and padding properties are part of the declaration block for the * selector? Sometimes,
+        <br>
+            <li>Did you notice that the margin and padding properties are part of the declaration block for the * selector? Sometimes,
               we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or *. In
               this rule, we have declared that ALL of the elements on the page will have the style properties margin and padding set
               as 0:</li>
-          <li>Let's add another CSS rule to our style sheet. This rule is for the header and footer selectors, as shown in the
+        <br>
+            <li>Let's add another CSS rule to our style sheet. This rule is for the header and footer selectors, as shown in the
               following code:
               header,
               footer {
@@ -241,12 +278,14 @@
               declarations to affect both selectors. Rather than repeating a rule which would add more lines of code and repetition,
               two or more elements that will share the same styling can be grouped together. This helps us write Do Not Repeat
               Yourself (DRY) code.</li>
-              <li>/* .card {
+            <br>
+            <li>/* .card {
               width: 80%;
               margin: 40px auto;
               border: 5px solid gray;
               box-shadow: 5px 10px #888888;
               }*/ </li>
+            
           <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain
               these property assignments from the CSS.
               The first declaration addresses the width of the element at 80% of the available width.
@@ -257,9 +296,13 @@
               example, the X offset is 5px and defines the width or extent of the shadow on the X axis (or to the right of the box);
               the Y offset is 10px and defines the extent on the Y axis (or just below the box). We haven’t defined the blur or spread
               radius here, but you’ll learn more about this in time. We’ve used an HTML hexadecimal code to define the color.</li>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
+        <br>
+            <li>A margin indicates how much space we want around the outside of an element.</li>
+        <br>
+            <li>A padding indicates how much space we want around the content inside an element.</li>
+        <br>
         <h4>ELEMENT:setAttribute()method</h4>
+        <br>
         <li>Element: setAttribute() method
         The setAttribute() method of the Element interface sets the value of an attribute on the specified element. If the
         attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
@@ -310,7 +353,9 @@
             actual value, its value is considered to be true. The absence of the attribute means its value is false. By setting
             the value of the disabled attribute to the empty string (""), we are setting disabled to true, which results in the
             button being disabled. cited from Web MDN</li>
+            <br>
         <h4>Document: createElement() method</h4>
+        <br>
 <li> 
 In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an
 HTMLUnknownElement if tagName isn't recognized.
@@ -343,61 +388,62 @@ This creates a new <div> and inserts it before the element with the ID "div1".
         </section>
         
         <section class="card" id="git-section">
+            <br>
           <h2>Git</h2>
+          <br>
           <h3>Enter your Git notes here</h3>
+          <br>
             <hr>
           <ul>
             
                 <li>Git is a version control system that allows developers to track changes in their code.</li>
+            <br>
             <h4>COMMANDS for GIT</h4>
+            <br>
                 <li>git status: checks what branch we are currently on</li>
                 <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-                <li>Types of GitHub Pages sites
-            <h4>TYPES OF PUBLISHED GIT HUB</h4>   
-                There are three types of GitHub Pages sites: project, user, and organization. Project sites are connected to a specific
+            <br>
+            <h4>TYPES OF PUBLISHED GIT HUB</h4>  
+            <br> 
+                <li>There are three types of GitHub Pages sites: project, user, and organization. Project sites are connected to a specific
                 project hosted on GitHub, such as a JavaScript library or a recipe collection. User and organization sites are connected
-                to a specific account on GitHub.com.
+                to a specific account on GitHub.com.</li>
+            <br>
             <h4>HOW TO PUBLISH WEBPAGE/WEBSITE</h4>
-                To publish a user site, you must create a repository owned by your personal account that's named <username>.github.io.
+            <br>
+                <li>To publish a user site, you must create a repository owned by your personal account that's named <username>.github.io.
                     To publish an organization site, you must create a repository owned by an organization that's named <organization>
                         .github.io. Unless you're using a custom domain, user and organization sites are available at http(s)://
-                        <username>.github.io or http(s)://<organization>.github.io.
-                
-                                The source files for a project site are stored in the same repository as their project. Unless you're
-                                using a custom domain, project sites are available at http(s)://<username>.github.io/<repository> or
-                                        http(s)://<organization>.github.io/<repository>.
+                        <username>.github.io or http(s)://<organization>.github.io.</organization>li>
+            <br>
+                <li>The source files for a project site are stored in the same repository as their project. Unless you're
+                    using a custom domain, project sites are available at http(s)://<username>.github.io/<repository> or
+                    http(s)://<organization>.github.io/ <repository>. 
 </li>
-                <li>Publishing from a branch
-                
-                Make sure the branch you want to use as your publishing source already exists in your repository.
-                
-                On GitHub, navigate to your site's repository.
-                
-                Under your repository name, click Settings. If you cannot see the "Settings" tab, select the dropdown menu, then click
-                Settings.
-                
-                Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.
-                In the "Code and automation" section of the sidebar, click Pages.
-                
-                Under "Build and deployment", under "Source", select Deploy from a branch.
-                
-                Under "Build and deployment", use the branch dropdown menu and select a publishing source.
-                
-                Screenshot of Pages settings in a GitHub repository. A menu to select a branch for a publishing source, labeled "None,"
-                is outlined in dark orange.
-                Optionally, use the folder dropdown menu to select a folder for your publishing source.
-                
-                Screenshot of Pages settings in a GitHub repository. A menu to select a folder for a publishing source, labeled
-                "/(root)," is outlined in dark orange.
-                Click Save.</li>
+                <br><b>Publishing from a branch</b>
+                    <br>
+                <li>Make sure the branch you want to use as your publishing source already exists in your repository.</li>
+                <li>On GitHub, navigate to your site's repository.</li>
+                <li>Under your repository name, click Settings. If you cannot see the "Settings" tab, select the dropdown menu, then click
+                Settings.</li>
+                <li>In the "Code and automation" section of the sidebar, click Pages.</li>
+                <li>Under "Build and deployment", under "Source", select Deploy from a branch.</li>
+                <li>Under "Build and deployment", use the branch dropdown menu and select a publishing source.</li>
+                <li>Screenshot of Pages settings in a GitHub repository. A menu to select a branch for a publishing source, labeled "None,"
+                is outlined in dark orange.</li>
+                <li>Optionally, use the folder dropdown menu to select a folder for your publishing source.</li>
+                <li>Click Save.</li>
               </ul>
 
           </ul>
         </section>
         
         <section class="card" id="javascript-section">
+            <br>
           <h2>JavaScript</h2>
+          <br>
           <h3>Enter your JavaScript notes here</h3>
+            <br>
           <hr>
           <ul>
             <h4>JavaScript BASICS</h4>
@@ -839,6 +885,7 @@ The syntax is simple. Any attribute on any element whose attribute name starts w
 have an article and you want to store some extra information that doesn't have any visual representation. Just use data
 attributes for that:
 </li>
+<br>
 <li>html
 
 < article id="electric-cars" data-columns="3" data-index-number="12314" data-parent="cars" >
@@ -895,6 +942,13 @@ access them. In addition, search crawlers may not index data attributes' values.
 This article is adapted from Using data attributes in JavaScript and CSS on hacks.mozilla.org.
 Custom attributes are also supported in SVG 2; see HTMLElement.dataset and data-* for more information.
 How to use HTML data attributes (Sitepoint)</li>
+<br>
+<li><b>If we were to log process.argv[1] to the console, what would be printed?</b></li>
+<li>It would print the path to the file that is being executed. process.argv is an array that 
+    contains the command line.  0, 1 are the first two elements of the array. 0 is the path to the node executable and 1 is the path to the file being executed.</li>
+<br>
+<li><b>Which of the following methods in the fs module is used to read the contents of a file asynchronously?</b></li>
+<li>readFile() is used to read the contents of a file asynchronously. The fs module is a built-in module in Node.js that provides file system-related functionality. The readFile() method reads the entire contents of a file asynchronously and returns the data in a callback function.</li>
 <ul>    </ul>
     </ul>
           <ul>
