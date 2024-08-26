@@ -1,5 +1,5 @@
 # Prework-Study-Guide
- A studyguide created in Bootcamp to help students.
+ A studyguide created in Bootcamp to help students study the things learned in bootcamp and beyond.
 
  # Prework Study Guide Webpage
 
