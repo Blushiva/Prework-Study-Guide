@@ -24,16 +24,22 @@
        <!-- coding this the right way-->
 
         <section class="card" id="html-section">
-
+        <br>
           <h2>HTML</h2>
+        <br>
             <h3>Enter your HTML notes here</h3>
+        <br>
             <hr>
           <ul>
+            <br>
             <h4>HTML BASICS</h4>
+            <br>
             <li>HTML is the standard markup language for creating Web pages.</li>
             <li>HTML stands for Hyper Text Markup Language</li>
             <li>HTML describes the structure of Web pages using markup</li>
+            <br>
             <h4>Elements</h4>
+            <br>
             <li>The head element contains information about the webpage.</li>
             <li>The body element represents the visible content shown to the user.</li>
             <li>Elements that are nested inside other elements are called child elements. 
@@ -48,6 +54,14 @@
                 know the difference. An element refers to the entire element 
                 from opening tag to closing tag, whereas a tag refers only
                 to what appears inside the angle brackets.</li>
+            <li>the b> tag makes text bold</li>
+            <li>The i> tag makes text italic</li>
+            <li>The u> tag makes text underlined</li>
+            <li>The br> tag creates a line break</li>
+            <li>The hr> tag creates a horizontal rule</li>
+            <li>The em> tag emphasizes text</li>
+            <li>The strong> tag highlights text</li>
+            <li>The a> tag creates a hyperlink</li>
             <li>The h1, h2, h3, h4, h5, and h6 elements represent 
                 the level of heading a given text block represents.
                 Headings are exactly what they sound like: larger or more 
@@ -93,9 +107,9 @@
                 webpage. The img element can contain various attributes; the src 
                 attribute is the most important because it defines the location 
                 of the image.  example: src="https://static.fullstack-bootcamp.com/prework/module-03/lesson-01/cute-pandas-02.jpg" </li>
-            <li>The a element is an anchor used to create hyperlinks. </li>
-            
+            <br>
             <h4>Attributes</h4>
+            <br>
             <li>The target attribute is optional. If it is not specified, the linked page will open in the same window or tab.</li>
             <li>The alt attribute is used to provide a text description of the image. 
                 This is important for accessibility because screen readers will 
@@ -112,8 +126,6 @@
             <li>The _self value opens the linked page in the same frame as it was clicked.</li>
             <li>The _parent value opens the linked page in the parent frame.</li>
             <li>The _top value opens the linked page in the full body of the window.</li>
-
-            
             <li>The id attribute is used to define a unique identifier for an element.
                 The id attribute is used to create internal links. 
                 Internal links are used to link to a specific section of the same page. 
@@ -121,11 +133,15 @@
                 define the section you want to link to. example: section id="section-id">Section content /section></li>
             <li>* The `src` attribute defines the location, or source, of the image file.
             * The `alt` attribute contains a text string that describes the appearance and functionality of the image.</li>
+        <br>
         <h4>FOOTER</h4>
+        <br>
             <li>Lastly, we have a "footer" element. The "footer" appears at the bottom of the page and usually contains the author,
                 copyright, contact, sitemap, and navigation. In our case, we have a "p" element that renders "I can code!", as
                 follows:</li>
+        <br>
         <h4>STYLE PROPERTY</h4>
+        <br>
         <li>HTMLElement: style property
         The read-only style property of the HTMLElement returns the inline style of an element in the form of a live
         CSSStyleDeclaration object that contains a list of all styles properties for that element with values assigned only for
@@ -154,8 +170,9 @@
         If the property is made of several words, separated by dashes, the dashes are removed and it is converted to camel case:
         background-attachment becomes backgroundAttachment.
         The style property has the same priority in the CSS cascade as an inline style declaration set via the style attribute.</li>
-
+        <br>
         <h4>Document: createElement() method</h4>
+        <br>
         <li>
             In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an
             HTMLUnknownElement if tagName isn't recognized.
@@ -184,51 +201,71 @@
             new
             Element is returned.
         
-            This creates a new <div> and inserts it before the element with the ID "div1".
+            This creates a new div> and inserts it before the element with the ID "div1".
         </li>
           </ul>
         </section>
         
         <section class="card" id="css-section">
+        <br>
           <h2>CSS</h2>
+        <br>
           <h3>Enter your CSS notes here</h3>
+          <br>
           <hr>
           <ul>
             
           
           <li>When a developer wants to style an element directly in the HTML file, they use inline CSS.</li>
+          <br>
           <li>Inline CSS is applied to a single element using the style attribute.</li>
+        <br>
           <li>Inline CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
+        <br>
           <li>Internal CSS is used to style a single page. It is placed in the head section of the HTML file using the style element.</li>
-          <li>Internal CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
-          <li>External CSS is used to style multiple pages. It is placed in a separate CSS file and linked to the HTML file using the link element.</li>
-          <li>External CSS is recommended because it separates content from presentation, making the code easier to maintain and update.</li>
-          <li>The CSS syntax consists of a selector, property, and value.</li>
-          <li>The selector is the HTML element that you want to style.</li> 
-          <li>The property is the aspect of the element that you want to change.</li>
-          <li>The value is the new setting for the property.</li>
-          <li>For example, to change the color of the h1 element to red, you would use the following CSS code: h1 { color: red; }</li>
-          <li>CSS properties can be grouped together using a comma.</li>
-          <li>Declarations contain two important components: the CSS property 
+        <br>
+            <li>Internal CSS is not recommended because it mixes content with presentation, making the code harder to maintain and update.</li>
+        <br><li>External CSS is used to style multiple pages. It is placed in a separate CSS file and linked to the HTML file using the link element.</li>
+        <br>
+            <li>External CSS is recommended because it separates content from presentation, making the code easier to maintain and update.</li>
+        <br>
+            <li>The CSS syntax consists of a selector, property, and value.</li>
+        <br>
+            <li>The selector is the HTML element that you want to style.</li> 
+        <br>
+            <li>The property is the aspect of the element that you want to change.</li>
+        <br>
+            <li>The value is the new setting for the property.</li>
+        <br>
+            <li>For example, to change the color of the h1 element to red, you would use the following CSS code: h1 { color: red; }</li>
+        <br>
+            <li>CSS properties can be grouped together using a comma.</li>
+        <br>
+            <li>Declarations contain two important components: the CSS property 
               we want to apply and the value of the property. For
               example, the declaration color: blue; includes the CSS property 
               color and the value for that property, blue.</li>
-          <li>The margin property acts much like a margin in a word processing document. 
+        <br>
+            <li>The margin property acts much like a margin in a word processing document. 
               A margin property indicates how much space we want around the outside of 
               an element. The margin is not visible on the page; it merely adds a 
               buffer. When we set the margin property to 0, we are indicating 
               that we want NO extra space around the element.</li>
-          <li>The padding property is often confused withmargin, but it is not the same thing. The padding property adds space around
+        <br>
+            <li>The padding property is often confused withmargin, but it is not the same thing. The padding property adds space around
               the content inside an element. When you increase padding, you are actually making the entire element bigger! That is
               because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer
               outside an element.</li>
-          <li>it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element,
+        <br>
+            <li>it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element,
               and the element's borders, padding, and content. This is sometimes referred to as the CSS box model.</li>
-          <li>Did you notice that the margin and padding properties are part of the declaration block for the * selector? Sometimes,
+        <br>
+            <li>Did you notice that the margin and padding properties are part of the declaration block for the * selector? Sometimes,
               we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or *. In
               this rule, we have declared that ALL of the elements on the page will have the style properties margin and padding set
               as 0:</li>
-          <li>Let's add another CSS rule to our style sheet. This rule is for the header and footer selectors, as shown in the
+        <br>
+            <li>Let's add another CSS rule to our style sheet. This rule is for the header and footer selectors, as shown in the
               following code:
               header,
               footer {
@@ -241,12 +278,14 @@
               declarations to affect both selectors. Rather than repeating a rule which would add more lines of code and repetition,
               two or more elements that will share the same styling can be grouped together. This helps us write Do Not Repeat
               Yourself (DRY) code.</li>
-              <li>/* .card {
+            <br>
+            <li>/* .card {
               width: 80%;
               margin: 40px auto;
               border: 5px solid gray;
               box-shadow: 5px 10px #888888;
               }*/ </li>
+            
           <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain
               these property assignments from the CSS.
               The first declaration addresses the width of the element at 80% of the available width.
@@ -257,9 +296,13 @@
               example, the X offset is 5px and defines the width or extent of the shadow on the X axis (or to the right of the box);
               the Y offset is 10px and defines the extent on the Y axis (or just below the box). We haven’t defined the blur or spread
               radius here, but you’ll learn more about this in time. We’ve used an HTML hexadecimal code to define the color.</li>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
+        <br>
+            <li>A margin indicates how much space we want around the outside of an element.</li>
+        <br>
+            <li>A padding indicates how much space we want around the content inside an element.</li>
+        <br>
         <h4>ELEMENT:setAttribute()method</h4>
+        <br>
         <li>Element: setAttribute() method
         The setAttribute() method of the Element interface sets the value of an attribute on the specified element. If the
         attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
@@ -310,7 +353,9 @@
             actual value, its value is considered to be true. The absence of the attribute means its value is false. By setting
             the value of the disabled attribute to the empty string (""), we are setting disabled to true, which results in the
             button being disabled. cited from Web MDN</li>
+            <br>
         <h4>Document: createElement() method</h4>
+        <br>
 <li> 
 In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an
 HTMLUnknownElement if tagName isn't recognized.
@@ -343,61 +388,62 @@ This creates a new <div> and inserts it before the element with the ID "div1".
         </section>
         
         <section class="card" id="git-section">
+            <br>
           <h2>Git</h2>
+          <br>
           <h3>Enter your Git notes here</h3>
+          <br>
             <hr>
           <ul>
             
                 <li>Git is a version control system that allows developers to track changes in their code.</li>
+            <br>
             <h4>COMMANDS for GIT</h4>
+            <br>
                 <li>git status: checks what branch we are currently on</li>
                 <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-                <li>Types of GitHub Pages sites
-            <h4>TYPES OF PUBLISHED GIT HUB</h4>   
-                There are three types of GitHub Pages sites: project, user, and organization. Project sites are connected to a specific
+            <br>
+            <h4>TYPES OF PUBLISHED GIT HUB</h4>  
+            <br> 
+                <li>There are three types of GitHub Pages sites: project, user, and organization. Project sites are connected to a specific
                 project hosted on GitHub, such as a JavaScript library or a recipe collection. User and organization sites are connected
-                to a specific account on GitHub.com.
+                to a specific account on GitHub.com.</li>
+            <br>
             <h4>HOW TO PUBLISH WEBPAGE/WEBSITE</h4>
-                To publish a user site, you must create a repository owned by your personal account that's named <username>.github.io.
+            <br>
+                <li>To publish a user site, you must create a repository owned by your personal account that's named <username>.github.io.
                     To publish an organization site, you must create a repository owned by an organization that's named <organization>
                         .github.io. Unless you're using a custom domain, user and organization sites are available at http(s)://
-                        <username>.github.io or http(s)://<organization>.github.io.
-                
-                                The source files for a project site are stored in the same repository as their project. Unless you're
-                                using a custom domain, project sites are available at http(s)://<username>.github.io/<repository> or
-                                        http(s)://<organization>.github.io/<repository>.
+                        <username>.github.io or http(s)://<organization>.github.io.</organization>li>
+            <br>
+                <li>The source files for a project site are stored in the same repository as their project. Unless you're
+                    using a custom domain, project sites are available at http(s)://<username>.github.io/<repository> or
+                    http(s)://<organization>.github.io/ <repository>. 
 </li>
-                <li>Publishing from a branch
-                
-                Make sure the branch you want to use as your publishing source already exists in your repository.
-                
-                On GitHub, navigate to your site's repository.
-                
-                Under your repository name, click Settings. If you cannot see the "Settings" tab, select the dropdown menu, then click
-                Settings.
-                
-                Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.
-                In the "Code and automation" section of the sidebar, click Pages.
-                
-                Under "Build and deployment", under "Source", select Deploy from a branch.
-                
-                Under "Build and deployment", use the branch dropdown menu and select a publishing source.
-                
-                Screenshot of Pages settings in a GitHub repository. A menu to select a branch for a publishing source, labeled "None,"
-                is outlined in dark orange.
-                Optionally, use the folder dropdown menu to select a folder for your publishing source.
-                
-                Screenshot of Pages settings in a GitHub repository. A menu to select a folder for a publishing source, labeled
-                "/(root)," is outlined in dark orange.
-                Click Save.</li>
+                <br><b>Publishing from a branch</b>
+                    <br>
+                <li>Make sure the branch you want to use as your publishing source already exists in your repository.</li>
+                <li>On GitHub, navigate to your site's repository.</li>
+                <li>Under your repository name, click Settings. If you cannot see the "Settings" tab, select the dropdown menu, then click
+                Settings.</li>
+                <li>In the "Code and automation" section of the sidebar, click Pages.</li>
+                <li>Under "Build and deployment", under "Source", select Deploy from a branch.</li>
+                <li>Under "Build and deployment", use the branch dropdown menu and select a publishing source.</li>
+                <li>Screenshot of Pages settings in a GitHub repository. A menu to select a branch for a publishing source, labeled "None,"
+                is outlined in dark orange.</li>
+                <li>Optionally, use the folder dropdown menu to select a folder for your publishing source.</li>
+                <li>Click Save.</li>
               </ul>
 
           </ul>
         </section>
         
         <section class="card" id="javascript-section">
+            <br>
           <h2>JavaScript</h2>
+          <br>
           <h3>Enter your JavaScript notes here</h3>
+            <br>
           <hr>
           <ul>
             <h4>JavaScript BASICS</h4>
@@ -839,6 +885,7 @@ The syntax is simple. Any attribute on any element whose attribute name starts w
 have an article and you want to store some extra information that doesn't have any visual representation. Just use data
 attributes for that:
 </li>
+<br>
 <li>html
 
 < article id="electric-cars" data-columns="3" data-index-number="12314" data-parent="cars" >
@@ -895,6 +942,159 @@ access them. In addition, search crawlers may not index data attributes' values.
 This article is adapted from Using data attributes in JavaScript and CSS on hacks.mozilla.org.
 Custom attributes are also supported in SVG 2; see HTMLElement.dataset and data-* for more information.
 How to use HTML data attributes (Sitepoint)</li>
+<br>
+<li><b>If we were to log process.argv[1] to the console, what would be printed?</b></li>
+<li>It would print the path to the file that is being executed. process.argv is an array that 
+    contains the command line.  0, 1 are the first two elements of the array. 0 is the path to the node executable and 1 is the path to the file being executed.</li>
+<br>
+<b>fs cheatsheet</b>
+<br>
+<br>
+<b>Reading</b>
+<li>fs.readFile('file.txt', function(err, data) { .. });</li>
+<li>fs.readFile('file.txt', {encoding: 'utf-8'}, function(err, data) { .. });</li>
+<br>
+<b>Writing</b>
+<li>fs.writeFile('output.txt', function(err) { .. });</li>
+<li>fs.appendFile('output.txt', function(err) { .. });</li>
+<br>
+<b>Watch</b>
+<li>fs.watch('dir OR file.txt', { persistent: true }, function(event, file) {
+event; /* rename | change */
+});</li>
+<br>
+<b>Getting info</b>
+<li>fs.exists('file.txt', function(exists /*bool*/) { ... });</li>
+<li>fs.stat('file.txt', function(stats) {
+stats.isFile();
+stats.isDirectory();
+stats.isSymbolicLink();
+});</li>
+<br>
+<b>File operations</b>
+<br>
+<li>fs.rename('old.txt', 'new.txt', function(){});</li>
+<li>fs.chown('file.txt', uid, gid, function(){});</li>
+<li>fs.symlink('src', 'dest', function(){});</li>
+<li>fs.unlink('path', function(){});</li>
+<li>fs.rmdir('path', function(){});</li>
+<li>fs.readdir('path', function(err, files) { .. }); /* `files` = array of names */</li>
+<br>
+<b>Path</b>
+<li>fs.realpath('/etc/passwd', function(err, path) { /* "/private/etc/passwd" */ });</li>
+<br>
+<b>Sync</b>
+<li>data = fs.readFileSync('input.txt');</li>
+<li>fs.writeFileSync('output.txt', data);</li>
+<li>fs.appendFileSync('output.txt', data);</li>
+<li>fs.existsSync('file.txt');</li>
+<br>
+<b>References</b>
+<li>https://nodejs.org/api/fs.html</li>
+<br>
+<li><b>Which of the following methods in the fs module is used to read the contents of a file asynchronously?</b></li>
+<li>readFile() is used to read the contents of a file asynchronously. The fs module is a built-in module in Node.js that provides file system-related functionality. The readFile() method reads the entire contents of a file asynchronously and returns the data in a callback function.</li>
+<br>
+<b>package.json file</b>
+<li>When you type “npm init,” a package. json file is generated for your Node. js project. Important information about your
+project and its dependencies may be found in the package.</li>
+<li>In npm package.json, symbols like the tilde (~) and caret (^) help control which versions of packages can be used by
+projects when running npm install or yarn install. These symbols can be used to update dependencies to newer versions
+while ensuring code uses the correct versions and allowing for updates to fix bugs and security issues:</li>
+<li><b>Tilde (~)</b>
+<li>Matches the most recent patch version or minor version. For example, ~1.2.3 will match all 1.2.x versions but not 1.3.x
+versions. The tilde is more likely to introduce breaking changes than the caret because it allows for a wider range of
+patch versions.</li>
+<b>Caret (^)</b>
+<li>Indicates the first number, or the most recent major version. It will update on all future minor or patch versions
+without incrementing the major version. For example, ^1.2.3 will use releases from 1.2.3 to <2.0.0. Caret greater than (
+    ^> )
+    A combination of the caret and greater than symbols, this allows npm to update dependencies to newer versions that
+    are backward-compatible and have a version greater than the specified version. For example, if a dependency is
+    specified as “lodash”: “^>4.17.0”, npm can update it to any version that is both backward-compatible with 4.17.0 and
+    has a version greater than 4.17.0.</li>
+    <br>
+    <b>NPM</b>
+    <li>npm consists of three distinct components:<br>
+    
+    the website<br>
+    the Command Line Interface (CLI)<br>
+    the registry<br>
+    Use the website to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you
+    can set up organizations to manage access to public or private packages.<br>
+    
+    The CLI runs from a terminal, and is how most developers interact with npm.<br>
+    
+    The registry is a large public database of JavaScript software and the meta-information surrounding it.<br>
+    <b>Use npm to . . .</b>
+    <li>Adapt packages of code for your apps, or incorporate packages as they are.</li>
+    <li>Download standalone tools you can use right away.</li>
+    <li>Run packages without downloading using npx.</li>
+    <li>Share code with any npm user, anywhere.</li>
+    <li>Restrict code to specific developers.</li>
+    <li>Create organizations to coordinate package maintenance, coding, and developers.</li>
+    <li>Form virtual teams by using organizations.</li>
+    <li>Manage multiple versions of code and code dependencies.</li>
+    <li>Update applications easily when underlying code is updated.</li>
+    <li>Discover multiple ways to solve the same puzzle.</li>
+    <li>Find other developers who are working on similar problems and projects.</li>
+<b>Scoped packages in npm are preceded by an '@' symbol.</b>
+
+A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
+https://docs.npmjs.com/about-scopes
+
+Scopes are a way of grouping related packages together, and also affect a few things about the way npm treats the
+package. Each npm user/organization has their own scope, and only you can add packages in your scope. This means you
+don’t have to worry about someone taking your package name ahead of you. Thus it is also a good way to signal official
+packages for organizations. https://docs.npmjs.com/misc/scope
+
+The docs include additional information on requiring scoped packages:
+https://docs.npmjs.com/misc/scope#requiring-scoped-packages
+
+Requiring scoped packages
+
+Because scoped packages are installed into a scope folder, you have to include the name of the scope when requiring them
+in your code, e.g.
+
+require('@myorg/mypackage')
+There is nothing special about the way Node treats scope folders, this is just specifying to require the module
+mypackage in the folder</li>
+<li>npm install <alias>@npm:<name>:
+    <br>
+        <b>Install a package under a custom alias.</b> Allows multiple versions of a same-name package side-by-side, more
+        convenient import names for packages with otherwise long ones, and using git forks replacements or forked npm
+        packages as replacements. Aliasing works only on your project and does not rename packages in transitive
+        dependencies. Aliases should follow the naming conventions stated in validate-npm-package-name.
+        <br>
+        Examples:
+        npm install my-react@npm:react
+        npm install jquery2@npm:jquery@2
+        npm install jquery3@npm:jquery@3
+        npm install npa@npm:npm-package-arg
+        npm install [<@scope>/]<name>@<tag>:
+<br>
+        <b>Install the version of the package that is referenced by the specified tag. </b>If the tag does not
+            exist in the registry data for that package, then this will fail.<br>
+            Example:<br>
+            npm install sax@latest<br>
+            npm install @myorg/mypackage@latest<br>
+            npm install [<@scope>/]<name>@<version>:<br>
+        <b>Install the specified version of the package. </b>This will fail if the version has not been
+            published to the registry.<br>
+            Example:<br>
+            npm install sax@0.1.1<br>
+            npm install @myorg/privatepackage@1.5.0<br>
+            npm install [<@scope>/]<name>@<version range>:<br>
+            <b>Install a version of the package matching the specified version range.</b> This
+                will follow the same rules for resolving dependencies described in
+                package.json.<br>
+                Note that most version ranges must be put in quotes so that your shell will
+                treat it as a single argument.<br>
+            <li>Example:<br>
+                    npm install sax@">=0.1.0 <0.2.0" ><br>
+                    npm install @myorg/privatepackage@"16 - 17"<br>
+            </li>
+
 <ul>    </ul>
     </ul>
           <ul>
@@ -904,6 +1104,8 @@ How to use HTML data attributes (Sitepoint)</li>
     </main>
 
     <footer>
+        <br>
+        <br>
       <p>I can code!</p>
     </footer>
 
